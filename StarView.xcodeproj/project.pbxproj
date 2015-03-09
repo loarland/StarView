@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FE600361A88A42E00DF7BE0 /* CHNavDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE600351A88A42E00DF7BE0 /* CHNavDropView.m */; };
+		2FE600391A88A5B100DF7BE0 /* CHCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE600381A88A5B100DF7BE0 /* CHCustomViewController.m */; };
 		2FFFD34C1A845A84003FE877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD34B1A845A84003FE877 /* main.m */; };
 		2FFFD34F1A845A84003FE877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD34E1A845A84003FE877 /* AppDelegate.m */; };
 		2FFFD3521A845A84003FE877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD3511A845A84003FE877 /* ViewController.m */; };
@@ -14,6 +16,9 @@
 		2FFFD3571A845A84003FE877 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFFD3561A845A84003FE877 /* Images.xcassets */; };
 		2FFFD35A1A845A84003FE877 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFFD3581A845A84003FE877 /* LaunchScreen.xib */; };
 		2FFFD3661A845A84003FE877 /* StarViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD3651A845A84003FE877 /* StarViewTests.m */; };
+		2FFFD3761A845B24003FE877 /* empty_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FFFD3751A845B24003FE877 /* empty_star@2x.png */; };
+		2FFFD3781A845B2A003FE877 /* fill_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FFFD3771A845B2A003FE877 /* fill_star@2x.png */; };
+		2FFFD37B1A845D77003FE877 /* CHStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD37A1A845D77003FE877 /* CHStartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FE600341A88A42E00DF7BE0 /* CHNavDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHNavDropView.h; sourceTree = "<group>"; };
+		2FE600351A88A42E00DF7BE0 /* CHNavDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHNavDropView.m; sourceTree = "<group>"; };
+		2FE600371A88A5B100DF7BE0 /* CHCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCustomViewController.h; sourceTree = "<group>"; };
+		2FE600381A88A5B100DF7BE0 /* CHCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCustomViewController.m; sourceTree = "<group>"; };
 		2FFFD3461A845A84003FE877 /* StarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFFD34A1A845A84003FE877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FFFD34B1A845A84003FE877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,10 @@
 		2FFFD35F1A845A84003FE877 /* StarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFFD3641A845A84003FE877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FFFD3651A845A84003FE877 /* StarViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarViewTests.m; sourceTree = "<group>"; };
+		2FFFD3751A845B24003FE877 /* empty_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "empty_star@2x.png"; sourceTree = "<group>"; };
+		2FFFD3771A845B2A003FE877 /* fill_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fill_star@2x.png"; sourceTree = "<group>"; };
+		2FFFD3791A845D77003FE877 /* CHStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHStartView.h; sourceTree = "<group>"; };
+		2FFFD37A1A845D77003FE877 /* CHStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHStartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +94,15 @@
 		2FFFD3481A845A84003FE877 /* StarView */ = {
 			isa = PBXGroup;
 			children = (
+				2FFFD36F1A845A93003FE877 /* StarView */,
 				2FFFD34D1A845A84003FE877 /* AppDelegate.h */,
 				2FFFD34E1A845A84003FE877 /* AppDelegate.m */,
 				2FFFD3501A845A84003FE877 /* ViewController.h */,
 				2FFFD3511A845A84003FE877 /* ViewController.m */,
+				2FE600371A88A5B100DF7BE0 /* CHCustomViewController.h */,
+				2FE600381A88A5B100DF7BE0 /* CHCustomViewController.m */,
+				2FE600341A88A42E00DF7BE0 /* CHNavDropView.h */,
+				2FE600351A88A42E00DF7BE0 /* CHNavDropView.m */,
 				2FFFD3531A845A84003FE877 /* Main.storyboard */,
 				2FFFD3561A845A84003FE877 /* Images.xcassets */,
 				2FFFD3581A845A84003FE877 /* LaunchScreen.xib */,
@@ -117,6 +135,17 @@
 				2FFFD3641A845A84003FE877 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FFFD36F1A845A93003FE877 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				2FFFD3771A845B2A003FE877 /* fill_star@2x.png */,
+				2FFFD3751A845B24003FE877 /* empty_star@2x.png */,
+				2FFFD3791A845D77003FE877 /* CHStartView.h */,
+				2FFFD37A1A845D77003FE877 /* CHStartView.m */,
+			);
+			path = StarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFFD3761A845B24003FE877 /* empty_star@2x.png in Resources */,
+				2FFFD3781A845B2A003FE877 /* fill_star@2x.png in Resources */,
 				2FFFD3551A845A84003FE877 /* Main.storyboard in Resources */,
 				2FFFD35A1A845A84003FE877 /* LaunchScreen.xib in Resources */,
 				2FFFD3571A845A84003FE877 /* Images.xcassets in Resources */,
@@ -219,6 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFFD37B1A845D77003FE877 /* CHStartView.m in Sources */,
+				2FE600361A88A42E00DF7BE0 /* CHNavDropView.m in Sources */,
+				2FE600391A88A5B100DF7BE0 /* CHCustomViewController.m in Sources */,
 				2FFFD3521A845A84003FE877 /* ViewController.m in Sources */,
 				2FFFD34F1A845A84003FE877 /* AppDelegate.m in Sources */,
 				2FFFD34C1A845A84003FE877 /* main.m in Sources */,
@@ -414,6 +448,7 @@
 				2FFFD36B1A845A84003FE877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FFFD36C1A845A84003FE877 /* Build configuration list for PBXNativeTarget "StarViewTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +457,7 @@
 				2FFFD36E1A845A84003FE877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

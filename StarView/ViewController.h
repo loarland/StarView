@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHStartView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CHStartViewDelegate>
 
+
+@property (strong, nonatomic) CHStartView   *starView;
 
 @end
 

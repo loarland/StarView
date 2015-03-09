@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "CHCustomViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) CHCustomViewController *nav;
+@property (strong, nonatomic) ViewController *view;
 
 @end
 
