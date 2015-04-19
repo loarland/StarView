@@ -25,16 +25,33 @@
 */
 
 - (void)awakeFromNib{
-    if (_starCount<5) {
-        _starCount = 5;
+
+}
+
+- (id)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
     }
-    CGFloat width = kWidth;
-    CGFloat height = kHeight;
+    return self;
+}
+
+- (void)setStarCount:(NSInteger)starCount{
+    if (starCount<5) {
+        _starCount = 5;
+    }else{
+        _starCount = starCount;
+    }
+    CGFloat width = self.frame.size.width;
+    CGFloat height = self.frame.size.height;
     if (height>width/_starCount) {
         height = width/_starCount;
     }
     _arrStars = [NSMutableArray array];
     _currentIndex = 0;
+    for (UIView *subview in self.subviews) {
+        [subview removeFromSuperview];
+    }
     for (int i = 0; i<_starCount; i++) {
         UIImageView *starImg = [[UIImageView alloc]initWithFrame:CGRectMake(width/_starCount*i, 0, width/_starCount, height)];
         starImg.image = kImg_empty_star;
@@ -42,30 +59,6 @@
         [_arrStars addObject:starImg];
         [self addSubview:starImg];
     }
-}
-
-- (id)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    if (self) {
-        if (_starCount<5) {
-            _starCount = 5;
-        }
-        CGFloat width = frame.size.width;
-        CGFloat height = frame.size.height;
-        if (height>width/_starCount) {
-            height = width/_starCount;
-        }
-        _arrStars = [NSMutableArray array];
-        _currentIndex = 0;
-        for (int i = 0; i<_starCount; i++) {
-            UIImageView *starImg = [[UIImageView alloc]initWithFrame:CGRectMake(width/_starCount*i, 0, width/_starCount, height)];
-            starImg.image = kImg_empty_star;
-            starImg.userInteractionEnabled = YES;
-            [_arrStars addObject:starImg];
-            [self addSubview:starImg];
-        }
-    }
-    return self;
 }
 
 - (void)setCurrentIndex:(NSInteger)index{

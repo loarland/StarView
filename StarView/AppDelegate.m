@@ -17,15 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    _view = [[ViewController alloc]init];
-    _nav = [[CHCustomViewController alloc]initWithRootViewController:_view];
-    
-    
-    [_nav.navigationBar setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithRed:220 green:86 blue:124 alpha:0.9] rect:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)] forBarMetrics:UIBarMetricsDefault];
-//    _nav.navigationBar.hidden = YES;
-    self.window.rootViewController = _nav;
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

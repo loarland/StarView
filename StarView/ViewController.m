@@ -20,18 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _starView2.starCount = 10;
+    _starView2.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    _starView = [[CHStartView alloc]initWithFrame:CGRectMake(200, 400, 300, 85)];
-    _starView.starCount = 5;
+    _starView = [[CHStartView alloc]initWithFrame:CGRectMake(110, 100, 100, 20)];
+    _starView.center = CGPointMake(self.view.center.x, _starView.center.y);
+    _starView.starCount = 6;
     _starView.delegate = self;
     [self.view addSubview:_starView];
     
     
-    
-    label = [[UILabel alloc]initWithFrame:CGRectMake(200, 500, 300, 25)];
+    label = [[UILabel alloc]initWithFrame:CGRectMake(110, 150, 100, 20)];
+    label.center = CGPointMake(self.view.center.x, label.center.y);
     label.textColor = [UIColor blueColor];
     label.font = [UIFont boldSystemFontOfSize:20];
     label.textAlignment = NSTextAlignmentCenter;
@@ -41,8 +44,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    _starView2.starCount = 6;
-    _starView2.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {

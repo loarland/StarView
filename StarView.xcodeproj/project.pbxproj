@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FE600361A88A42E00DF7BE0 /* CHNavDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE600351A88A42E00DF7BE0 /* CHNavDropView.m */; };
-		2FE600391A88A5B100DF7BE0 /* CHCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE600381A88A5B100DF7BE0 /* CHCustomViewController.m */; };
 		2FFFD34C1A845A84003FE877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD34B1A845A84003FE877 /* main.m */; };
 		2FFFD34F1A845A84003FE877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD34E1A845A84003FE877 /* AppDelegate.m */; };
 		2FFFD3521A845A84003FE877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFFD3511A845A84003FE877 /* ViewController.m */; };
@@ -32,10 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2FE600341A88A42E00DF7BE0 /* CHNavDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHNavDropView.h; sourceTree = "<group>"; };
-		2FE600351A88A42E00DF7BE0 /* CHNavDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHNavDropView.m; sourceTree = "<group>"; };
-		2FE600371A88A5B100DF7BE0 /* CHCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCustomViewController.h; sourceTree = "<group>"; };
-		2FE600381A88A5B100DF7BE0 /* CHCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCustomViewController.m; sourceTree = "<group>"; };
 		2FFFD3461A845A84003FE877 /* StarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFFD34A1A845A84003FE877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FFFD34B1A845A84003FE877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,10 +93,6 @@
 				2FFFD34E1A845A84003FE877 /* AppDelegate.m */,
 				2FFFD3501A845A84003FE877 /* ViewController.h */,
 				2FFFD3511A845A84003FE877 /* ViewController.m */,
-				2FE600371A88A5B100DF7BE0 /* CHCustomViewController.h */,
-				2FE600381A88A5B100DF7BE0 /* CHCustomViewController.m */,
-				2FE600341A88A42E00DF7BE0 /* CHNavDropView.h */,
-				2FE600351A88A42E00DF7BE0 /* CHNavDropView.m */,
 				2FFFD3531A845A84003FE877 /* Main.storyboard */,
 				2FFFD3561A845A84003FE877 /* Images.xcassets */,
 				2FFFD3581A845A84003FE877 /* LaunchScreen.xib */,
@@ -251,8 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FFFD37B1A845D77003FE877 /* CHStartView.m in Sources */,
-				2FE600361A88A42E00DF7BE0 /* CHNavDropView.m in Sources */,
-				2FE600391A88A5B100DF7BE0 /* CHCustomViewController.m in Sources */,
 				2FFFD3521A845A84003FE877 /* ViewController.m in Sources */,
 				2FFFD34F1A845A84003FE877 /* AppDelegate.m in Sources */,
 				2FFFD34C1A845A84003FE877 /* main.m in Sources */,
