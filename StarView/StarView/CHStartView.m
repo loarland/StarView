@@ -43,7 +43,7 @@
         _starCount = starCount;
     }
     CGFloat width = self.frame.size.width;
-    CGFloat height = self.frame.size.height;
+    CGFloat height = self.frame.size.height; 
     if (height>width/_starCount) {
         height = width/_starCount;
     }
